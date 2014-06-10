@@ -1,0 +1,27 @@
+{
+  "name": "passport-cas-strategy",
+  "version": "0.0.1",
+  "description": "Cas authentication strategy for Passport.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:egor-manjula/passport-cas-strategy.git"
+  },
+  "keywords": [
+    "passport",
+    "auth",
+    "cas"
+  ],
+  "author": "Egor Manjula",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egor-manjula/passport-cas-strategy"
+  },
+  "homepage": "https://github.com/egor-manjula/passport-cas-strategy",
+  "dependencies": {
+    "passport": "~0.1.18",
+    "xml2json": "~0.4.0",
+    "lodash": "~2.4.1"
+  }
+}
