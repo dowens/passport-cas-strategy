@@ -10,7 +10,7 @@ var routes = require('./routes/index');
 var users  = require('./routes/users');
 
 var passport = require('passport');
-var CasStrategy = require('passport-cas').Strategy;
+var CasStrategy = require('passport-cas-strategy').Strategy;
 
 passport.use(new CasStrategy({
     postRedirect  : true,
