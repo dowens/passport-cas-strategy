@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/egor-manjula/passport-cas-strategy",
   "dependencies": {
-    "passport": "~0.1.18",
+    "passport": "~0.2.0",
     "xml2json": "~0.4.0",
     "lodash": "~2.4.1"
   }
