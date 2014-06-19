@@ -87,13 +87,11 @@ class Strategy extends passport.Strategy
 
       _.extend {}, _RESULT, result
 
-  _serviceValidateResponseHandler = (body)->
-
   _VALIDATE_RESPONSE_HANDLER =
     'default' : _validateResponseHandler
     'validate': _validateResponseHandler
     'proxyvalidate'  : _proxyValidateResponseHandler
-    'servicevalidate': _serviceValidateResponseHandler
+    'servicevalidate': _proxyValidateResponseHandler
 
   constructor: (options, verifyCallback) ->
 

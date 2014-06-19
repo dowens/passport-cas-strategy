@@ -16,7 +16,7 @@ passport.use(new CasStrategy({
     postRedirect  : true,
     casServiceUrl : 'https://172.17.1.36:18443/cas', // "https://10.49.128.21:8443/cas/login"
     serviceBaseUrl: 'http://localhost:3000',
-    validateMethod: 'proxyvalidate', // ['validate', 'proxyValidate', 'serviceValidate']
+    validateMethod: 'serviceValidate', // ['validate', 'proxyValidate', 'serviceValidate']
     passReqToCallback: true,
     pgtUrl: 'https://172.17.1.36:18443/yukon-security-cas-pgt-web/proxyGrantingTicketCallback'
   }, function(req, data, done) {

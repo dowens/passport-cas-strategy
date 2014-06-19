@@ -34,7 +34,7 @@
         pgtUrl: 'https://ip/proxyGrantingTicketCallback'
       }
      */
-    var _DEFAULTS, _RESULT, _VALIDATE_RESPONSE_HANDLER, _VALIDATE_URL, _proxyValidateResponseHandler, _serviceValidateResponseHandler, _validateResponseHandler;
+    var _DEFAULTS, _RESULT, _VALIDATE_RESPONSE_HANDLER, _VALIDATE_URL, _proxyValidateResponseHandler, _validateResponseHandler;
 
     __extends(Strategy, _super);
 
@@ -104,13 +104,11 @@
       return _.extend({}, _RESULT, result);
     };
 
-    _serviceValidateResponseHandler = function(body) {};
-
     _VALIDATE_RESPONSE_HANDLER = {
       'default': _validateResponseHandler,
       'validate': _validateResponseHandler,
       'proxyvalidate': _proxyValidateResponseHandler,
-      'servicevalidate': _serviceValidateResponseHandler
+      'servicevalidate': _proxyValidateResponseHandler
     };
 
     function Strategy(options, verifyCallback) {
